@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around the world!</title>
+</head>
+
+<body>
+    <header>
+        <h1>Around the world</h1>
+    </header>
+     <nav>
+         <a href="#img">image</a>
+         <a href="#table">table</a>
+         <a href="#list">list</a>
+         <a href="#audio">audio</a>
+         <a href="#form">form</a>
+         <a href="#interview">interview</a>
+     </nav>
+
+    <main>
+
+        <article id="img">
+            <h2>Do you like travelling the world?</h2>
+            <p>Tell us your fascinating story!</p>
+            <img src="img/travel.jpg" alt="travel">
+        </article>
+        
+        <article id="table">
+            <h2>Our plan for 2018 year</h2>
+            <table border="1">
+                <tr>
+                    <th colspan="7">Travel calendar</th>
+                </tr>
+                <tr>
+                  <th rowspan="4">our plan</th>
+                  <th></th>
+                  <th>Destination</th>
+                  <th>Date</th>
+                  <th rowspan="4">your plan?</th>
+                  <th>Destination</th>
+                  <th>Date</th>
+                </tr>
+                
+                <tr>
+                  <td>1</td>
+                  <td>Lycian trail</td>
+                  <td>March</td>
+                  <th></th>
+                  <th></th>
+                </tr>
+                
+                <tr>
+                  <td>2</td>
+                  <td>Gdansk</td>
+                  <td>July</td>
+                  <th></th>
+                  <th></th>
+                </tr>
+                
+                <tr>
+                  <td>3</td>
+                  <td>Insbruk</td>
+                  <td>December</td>
+                  <th></th>
+                  <th></th>
+                </tr>
+            </table>
+        </article>
+        
+        <article id="list">
+            <h2>Our dream places</h2>
+            <ul>
+                <li>Netherlands</li>
+                <li>Italy</li>
+                <li>Australia</li>
+            </ul>
+        </article>
+        
+        <article>
+            <h2>Your dream places?</h2>
+            <ol>
+              <li></li> 
+              <li></li>
+              <li></li>
+            </ol>
+        </article>
+        
+        <article id="audio">
+            <audio src="roxette.mp3" controls="controls"></audio>
+        </article>
+        
+        <article id="form">
+          <h2>Tell us your fascinating story!</h2> 
+          <form method="POST"  action="">
+              <label> Your name:
+                 <input type="text" name="name"> 
+              </label>
+              <br>
+              <label> Your story:
+                 <textarea name="story"></textarea> 
+              </label>
+              <br>
+              <input type="submit">
+          </form>
+        </article>
+        
+        <article id="interview">
+            <h2>Please answer some our questions:</h2>
+            <form method="POST" action="https://www.formspree.io/anastasiya.razumeyko@gmail.com">
+                
+                <fieldset>
+                <legend>About you</legend>
+                <ul>
+                <li>
+                    <label>Your name:
+                    <input type="text" name="name">
+                    </label>
+                </li>
+                <li>
+                    <label>Your age:
+                    <input type="text" name="age">
+                     </label>
+                </li>
+                <li>
+                <p>Your gender:</p>
+                <label>
+                <input type="radio" name="gender" value="male"> Male
+                </label>
+                <label>
+                <input type="radio" name="gender" value="Female"> Female   
+                </label>
+                </li>
+                </ul>
+                </fieldset>
+                
+                <fieldset>
+                <legend>About you dream trip</legend>
+                <ul>
+                <li>
+                    <label> Discribe trip of your dream:
+                    <textarea name="dream trip"></textarea>
+                </label>
+                </li>
+                <li>
+                <label> Which country would your choose?
+                <select size="3" multiple>
+                    <option value="France">France</option>
+                    <option value="China">China</option>
+                    <option value="Italy">Italy</option>
+                </select>
+                </label>
+                </li>
+                </ul>
+                </fieldset>
+                
+                <input type="submit">
+            </form>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>travel the world ;)</p>
+    </footer>
+</body>
+
+</html>
